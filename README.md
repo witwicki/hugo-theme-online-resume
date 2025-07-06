@@ -41,6 +41,10 @@ Features:
 - Copy `hugo.yml` and `data.yml` files.
   - `cp themes/online-resume/exampleSite/hugo.yml .`
   - `cp themes/online-resume/exampleSite/data/data.yml ./data`
+- Modify hugo.toml to utilize theme and enable main content.
+  - `echo "theme = 'online-resume'" >> hugo.toml`
+  - `echo -e "\n[params]" >> hugo.toml`
+  - `echo "open = True" >> hugo.toml`
 - Edit `data/data.yml` file directly to update your resume.
 - Run `hugo server` and open in browser to preview the resume.
 
